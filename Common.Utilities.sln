@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meyn.Utilities", "Meyn.Utilities\Meyn.Utilities.csproj", "{EFFA1774-2275-4658-9CE1-320400B12744}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{D9F1FA70-6EC2-4BEC-B121-C8B4CBDCC5EC}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\release.yml = .github\workflows\release.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFFA1774-2275-4658-9CE1-320400B12744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFA1774-2275-4658-9CE1-320400B12744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFA1774-2275-4658-9CE1-320400B12744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFA1774-2275-4658-9CE1-320400B12744}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EB9647D-E3AD-44A7-9136-52D23D46AD70}
+	EndGlobalSection
+EndGlobal
