@@ -14,13 +14,13 @@ namespace Common.Utilities
 			RandomNumberGenerator.GetBytes(bytes);
 			return string.Join(string.Empty, bytes.Select(b => b % 10));
 		}
-		public static string ComputeSha256Hash(string rawData)
+		public static string ComputeSha512Hash(string rawData)
 		{
-			// Create a SHA256   
-			using (var sha256Hash = SHA256.Create())
+			// Create a SHA512   
+			using (var sha512Hash = SHA512.Create())
 			{
 				// ComputeHash - returns byte array  
-				byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+				byte[] bytes = sha512Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
 
 				// Convert byte array to a string   
 				StringBuilder builder = new();
