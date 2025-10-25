@@ -32,6 +32,20 @@ namespace Common.Utilities
 			}
 		}
 
+		// Encode string to Base64
+		public static string ToBase64(string plainText)
+		{
+			var bytes = Encoding.UTF8.GetBytes(plainText);
+			return Convert.ToBase64String(bytes);
+		}
+		
+		// Decode Base64 to string
+		public static string FromBase64(string base64String)
+		{
+			var bytes = Convert.FromBase64String(base64String);
+			return Encoding.UTF8.GetString(bytes);
+		}
+/*
 		public static string Base64Encode(string plainText)
 		{
 			try
@@ -61,6 +75,6 @@ namespace Common.Utilities
 			catch{}
 			return base64EncodedData;
 		}
-
+*/
 	}
 }
