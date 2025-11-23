@@ -1,6 +1,11 @@
 # Meyn.Utilities
 
+[![NuGet](https://img.shields.io/nuget/v/Meyn.Utilities.svg)](https://www.nuget.org/packages/Meyn.Utilities)
+[![GitHub](https://img.shields.io/github/license/prmeyn/CommonUtilities)](https://github.com/prmeyn/CommonUtilities/blob/main/LICENSE)
+
 A collection of common utilities and extensions for .NET applications.
+
+**Repository:** [https://github.com/prmeyn/CommonUtilities](https://github.com/prmeyn/CommonUtilities)
 
 ## Installation
 
