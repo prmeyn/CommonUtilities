@@ -46,36 +46,5 @@ namespace Common.Utilities
 			var bytes = Convert.FromBase64String(base64String);
 			return Encoding.UTF8.GetString(bytes);
 		}
-/*
-		public static string Base64Encode(string plainText)
-		{
-			try
-			{
-				if (string.IsNullOrEmpty(plainText))
-				{
-					return "";
-				}
-				var plainTextBytes = Encoding.GetEncoding(28591).GetBytes(plainText);
-				return System.Convert.ToBase64String(plainTextBytes);
-			}
-			catch{}
-			return "";
-		}
-
-		public static string Base64Decode(string base64EncodedData)
-		{
-			try
-			{
-				if (string.IsNullOrEmpty(base64EncodedData))
-				{
-					return "";
-				}
-				var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
-				return Encoding.GetEncoding(28591).GetString(base64EncodedBytes);
-			}
-			catch{}
-			return base64EncodedData;
-		}
-*/
 	}
 }
