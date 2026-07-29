@@ -1,4 +1,5 @@
 using Meyn.Utilities;
+using System;
 using System.Collections.Generic;
 using Xunit;
 
@@ -28,6 +29,25 @@ namespace Meyn.Utilities.Tests
             };
             string result = Utils.SubstituteTemplate(template, args);
             Assert.Equal("Hello World!", result);
+        }
+
+        [Fact]
+        public void SubstituteTemplate_ReplacesMultiplePlaceholders()
+        {
+            string template = "##Greeting## ##Name##!";
+            var args = new Dictionary<string, string>
+            {
+                { "Greeting", "Hello" },
+                { "Name", "World" }
+            };
+            string result = Utils.SubstituteTemplate(template, args);
+            Assert.Equal("Hello World!", result);
+        }
+
+        [Fact]
+        public void SubstituteTemplate_ThrowsWhenArgsIsNull()
+        {
+            Assert.Throws<ArgumentNullException>(() => Utils.SubstituteTemplate("Hello", null!));
         }
 
         [Fact]
