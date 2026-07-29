@@ -10,6 +10,10 @@
   </ItemGroup>
 
   <PropertyGroup>
+    <PackageId>Meyn.Utilities</PackageId>
+    <Authors>Antony Meyn</Authors>
+    <Description>Common utility helpers for .NET: cryptography (SHA-512, Base64, uniform secure random digits), string templating, and HTTP context extensions.</Description>
+    <PackageTags>utilities;crypto;sha512;base64;templating;extensions;httpcontext</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/prmeyn/CommonUtilities</RepositoryUrl>
