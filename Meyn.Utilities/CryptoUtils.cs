@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -7,13 +6,16 @@ namespace Common.Utilities
 {
 	public static class CryptoUtils
 	{
-		private static readonly RandomNumberGenerator RandomNumberGenerator = RandomNumberGenerator.Create();
-
 		public static string GetRandomNumber(int numberOfDigits)
 		{
-			var bytes = new byte[numberOfDigits];
-			RandomNumberGenerator.GetBytes(bytes);
-			return string.Join(string.Empty, bytes.Select(b => b % 10));
+			var builder = new StringBuilder(numberOfDigits);
+			for (int i = 0; i < numberOfDigits; i++)
+			{
+				// GetInt32 draws uniformly from [0, 10), avoiding the modulo
+				// bias that byte % 10 introduces (0-5 would occur more often).
+				builder.Append(RandomNumberGenerator.GetInt32(10));
+			}
+			return builder.ToString();
 		}
 		public static string ComputeSha512Hash(string rawData)
 		{
