@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Common.Utilities
@@ -7,6 +8,7 @@ namespace Common.Utilities
 	{
 		public static string SubstituteTemplate(string template, Dictionary<string, string> args)
 		{
+			ArgumentNullException.ThrowIfNull(args);
 			var result = string.IsNullOrWhiteSpace(template) ? string.Join("\n", args.Keys.Select(k => $"##{k}##")) : template;
 			foreach (var arg in args)
 			{
