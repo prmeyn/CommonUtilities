@@ -1,14 +1,14 @@
-using Common.Utilities;
-using Xunit;
-
 namespace Meyn.Utilities.Tests
 {
     public class CryptoUtilsTests
     {
-        [Fact]
-        public void GetRandomNumber_ReturnsCorrectLength()
+        [Theory]
+        [InlineData(0)]
+        [InlineData(1)]
+        [InlineData(10)]
+        [InlineData(64)]
+        public void GetRandomNumber_ReturnsRequestedLengthOfDigits(int length)
         {
-            int length = 10;
             string result = CryptoUtils.GetRandomNumber(length);
             Assert.Equal(length, result.Length);
             Assert.All(result, c => Assert.True(char.IsDigit(c)));
