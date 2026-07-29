@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Common.Utilities
+namespace Meyn.Utilities
 {
 	public static class CryptoUtils
 	{

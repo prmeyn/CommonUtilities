@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Common.Utilities
+namespace Meyn.Utilities
 {
 	public static class Utils
 	{

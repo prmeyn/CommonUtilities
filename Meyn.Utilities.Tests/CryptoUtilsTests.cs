@@ -1,4 +1,4 @@
-using Common.Utilities;
+using Meyn.Utilities;
 using Xunit;
 
 namespace Meyn.Utilities.Tests
