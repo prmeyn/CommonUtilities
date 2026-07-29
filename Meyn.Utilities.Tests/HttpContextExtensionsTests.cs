@@ -1,7 +1,6 @@
 using Meyn.Utilities.Extensions;
 using Microsoft.AspNetCore.Http;
 using System.Net;
-using Xunit;
 
 namespace Meyn.Utilities.Tests
 {

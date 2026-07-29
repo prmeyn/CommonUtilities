@@ -1,8 +1,3 @@
-using Meyn.Utilities;
-using System;
-using System.Collections.Generic;
-using Xunit;
-
 namespace Meyn.Utilities.Tests
 {
     public class UtilsTests
